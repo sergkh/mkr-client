@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "simple-mkr-client",
-    "slug": "simple-mkr-client",
+    "name": "mkr-client",
+    "slug": "mkr-client",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,16 +13,27 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sergkh.mkrclient",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.sergkh.mkrclient"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d0d894aa-7d58-438f-bce0-b09d78faa91c"
+      }
+    },
+    "owner": "sergkh"
   }
 }
